@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy · S Chromium Bridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p><a href="index.html">← S Chromium Bridge</a></p>
+      <h1>Privacy Policy</h1>
+      <p><strong>Effective date:</strong> September 19, 2026</p>
+
+      <section>
+        <h2>Summary</h2>
+        <p>
+          S Chromium Bridge is a local web-development tool. The extension does not send browsing
+          data, analytics, or request-modifier profiles to the developer. When the user enables the
+          Native Host bridge, the extension communicates with a companion installed on the same
+          device. Software that the user authorizes to call that companion may receive data needed
+          to perform the user's requested browser task.
+        </p>
+      </section>
+
+      <section>
+        <h2>Data the extension handles</h2>
+        <p>Depending on the feature the user invokes, the extension may process:</p>
+        <ul>
+          <li>browser tab URLs, titles, group membership, and navigation state;</li>
+          <li>website content and accessibility information;</li>
+          <li>screenshots, generated PDFs, console output, and bounded network diagnostics;</li>
+          <li>files the user explicitly uploads or downloads through the bridge;</li>
+          <li>
+            request-modifier profile values, including headers, cookies, redirects, and filters;
+          </li>
+          <li>
+            authentication or other sensitive page data only when exposed by a user-enabled browser
+            operation, such as Full CDP access.
+          </li>
+        </ul>
+        <p>
+          This handling occurs even when data remains on the user's device. The extension does not
+          include advertising, analytics, telemetry, or developer-operated collection endpoints.
+        </p>
+      </section>
+
+      <section>
+        <h2>How data is used</h2>
+        <p>
+          Data is used only to provide the extension's single purpose: local browser testing and
+          debugging requested by the user. This includes page inspection and interaction,
+          diagnostics, file transfer, and scoped request or response modification.
+        </p>
+        <p>
+          Data is not sold, used for advertising, credit decisions, or transferred for unrelated
+          purposes. The developer does not permit humans to read user data except when the user
+          deliberately includes specific information in a support request or when required by law.
+        </p>
+      </section>
+
+      <section>
+        <h2>Local companion and data sharing</h2>
+        <p>
+          The Native Messaging companion runs on the same computer. Its HTTP interface listens only
+          on <code>127.0.0.1</code> and requires a random per-install bearer token. Browser data is
+          sent only to this local companion. Other local software can receive data only when it has
+          access to that token and requests an enabled feature. The privacy practices of software
+          using the companion govern any subsequent transmission it performs.
+        </p>
+      </section>
+
+      <section>
+        <h2>Storage and retention</h2>
+        <ul>
+          <li>Settings and request-modifier profiles remain in Chrome local extension storage.</li>
+          <li>Temporary browser sessions and approvals expire or are removed when stopped.</li>
+          <li>Transfer data is bounded, temporary, and removed after use or expiration.</li>
+          <li>The local companion keeps configuration and discovery files on the user's device.</li>
+        </ul>
+        <p>
+          Users can delete profiles in the popup, use <strong>Stop all</strong> to end active work,
+          disable the extension, clear extension storage, or uninstall the extension and companion.
+        </p>
+      </section>
+
+      <section>
+        <h2>User controls</h2>
+        <ul>
+          <li>Native Host access and request modification are disabled by default.</li>
+          <li>Chrome asks the user before granting HTTP(S) page access.</li>
+          <li>Full CDP access is separately disabled by default and marked dangerous.</li>
+          <li>Users can stop sessions and debugger attachments from the popup at any time.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Security</h2>
+        <p>
+          The extension uses Manifest V3, a self-only content security policy, bounded messages and
+          results, scoped browser-session identities, output redaction, and exact Native Messaging
+          extension origins. No remotely hosted JavaScript is loaded into the extension.
+        </p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>The extension is a developer tool and is not directed to children under 13.</p>
+      </section>
+
+      <section>
+        <h2>Changes and contact</h2>
+        <p>
+          Material changes will be reflected on this page with a new effective date. Questions or
+          deletion requests may be sent to <a href="mailto:sxf038@gmail.com">sxf038@gmail.com</a>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

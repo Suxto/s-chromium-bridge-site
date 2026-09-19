@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Support · S Chromium Bridge</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <p><a href="index.html">← S Chromium Bridge</a></p>
+      <h1>Support and installation</h1>
+
+      <section>
+        <h2>Requirements</h2>
+        <ul>
+          <li>Google Chrome or Microsoft Edge 120 or newer.</li>
+          <li>macOS or Linux.</li>
+          <li>Node.js 22.19 or newer for the local companion.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Install the local companion</h2>
+        <p>
+          The extension's browser-control features require the separately installed companion.
+          Download the
+          <a
+            href="https://suxto.github.io/s-chromium-bridge-site/downloads/sunxiaotong.666-s-chromium-bridge-0.1.0.tgz"
+            >reviewer-accessible companion package</a
+          >, then run:
+        </p>
+        <pre><code>npm install --global ./sunxiaotong.666-s-chromium-bridge-0.1.0.tgz
+s-chromium-bridge install-host --browser chrome --json
+s-chromium-bridge doctor --json</code></pre>
+        <p>
+          Verify the package with the published
+          <a href="https://suxto.github.io/s-chromium-bridge-site/downloads/SHA256SUMS"
+            >SHA-256 checksum</a
+          >
+          before installation.
+        </p>
+        <p>
+          Open the extension popup, review the browser-data disclosure, and enable
+          <strong>Native Host bridge</strong>. Request modification is separately controlled by the
+          switch beside <strong>Profiles</strong>.
+        </p>
+      </section>
+
+      <section>
+        <h2>Troubleshooting</h2>
+        <ol>
+          <li>Confirm that the extension and companion versions match.</li>
+          <li>Run <code>s-chromium-bridge doctor --json</code>.</li>
+          <li>Reload the extension after upgrading the companion.</li>
+          <li>Keep Full CDP access off unless the requested task specifically needs it.</li>
+          <li>
+            Use <strong>Stop all</strong> to terminate active sessions and debugger attachments.
+          </li>
+        </ol>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For support, security reports, or privacy questions, email
+          <a href="mailto:sxf038@gmail.com">sxf038@gmail.com</a>.
+        </p>
+        <p><a href="privacy.html">Privacy Policy</a></p>
+      </section>
+    </main>
+  </body>
+</html>

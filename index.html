@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>S Chromium Bridge</title>
+    <meta
+      name="description"
+      content="A local developer bridge for testing and debugging websites in your existing browser."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="mark" aria-hidden="true">S</div>
+        <div>
+          <h1>S Chromium Bridge</h1>
+          <p>
+            A local developer bridge for testing and debugging websites in your existing browser.
+          </p>
+        </div>
+      </header>
+
+      <section>
+        <h2>What it does</h2>
+        <p>
+          S Chromium Bridge connects Chrome or Edge to a companion installed on the same computer.
+          After the user explicitly enables access, approved local developer tools can inspect and
+          interact with selected HTTP(S) pages, collect bounded diagnostics, and apply user-created
+          request-modifier profiles.
+        </p>
+        <ul>
+          <li>Inspect page structure and use semantic browser actions.</li>
+          <li>Capture screenshots, PDFs, console output, and bounded network diagnostics.</li>
+          <li>Apply explicit, scoped request and response modifications for local testing.</li>
+          <li>Stop all active sessions immediately from the extension popup.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Safety defaults</h2>
+        <ul>
+          <li>The Native Host bridge and request modification are off by default.</li>
+          <li>Raw Chrome DevTools Protocol access is separately disabled by default.</li>
+          <li>The companion listens only on localhost and requires a per-install bearer token.</li>
+          <li>The developer does not receive browsing data, analytics, or profile contents.</li>
+        </ul>
+      </section>
+
+      <nav aria-label="Policies and help">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support and installation</a>
+      </nav>
+    </main>
+  </body>
+</html>
